@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/enrollments"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "academicYearId": 6456,
+      "schoolClassId": 1789,
+      "sectionId": 1567,
+      "studentId": 6278,
+      "status": "ACTIVE"
+    }
+settings: {}
+examples: ./.resources/create Enrollment.resources/examples
+order: 4000

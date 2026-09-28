@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/classes"
+method: GET
+headers:
+  Accept: "*/*"
+settings: {}
+examples: ./.resources/classes.resources/examples
+order: 2000

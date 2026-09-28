@@ -1,0 +1,13 @@
+$kind: http-request
+description: Returns the identity, role and account status represented by the authenticated JWT.
+url: "{{baseUrl}}/api/v1/auth/me"
+method: GET
+headers:
+  Accept: "*/*"
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearerToken}}"
+settings: {}
+examples: ./.resources/Get current authenticated user.resources/examples
+order: 1000

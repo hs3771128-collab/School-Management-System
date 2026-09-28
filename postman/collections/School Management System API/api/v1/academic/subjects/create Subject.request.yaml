@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/subjects"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "code": "string",
+      "name": "string",
+      "description": "string",
+      "active": false
+    }
+settings: {}
+examples: ./.resources/create Subject.resources/examples
+order: 3000

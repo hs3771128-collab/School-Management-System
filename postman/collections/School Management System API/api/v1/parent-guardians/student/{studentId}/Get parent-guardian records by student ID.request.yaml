@@ -1,0 +1,14 @@
+$kind: http-request
+name: Get parent/guardian records by student ID
+description: Returns all parent/guardian records assigned to the student
+url: "{{baseUrl}}/api/v1/parent-guardians/student/:studentId"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: studentId
+    value: "1"
+    description: Student ID
+settings: {}
+examples: ./.resources/Get parent-guardian records by student ID.resources/examples
+order: 1000

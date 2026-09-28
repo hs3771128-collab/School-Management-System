@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teacher-assignments/academic-year/:academicYearId"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  academicYearId: "3357"
+settings: {}
+examples: ./.resources/Get all teacher assignments for an academic year.resources/examples
+order: 1000

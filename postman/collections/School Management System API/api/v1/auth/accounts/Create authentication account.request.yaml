@@ -1,0 +1,27 @@
+$kind: http-request
+description: Creates a database-backed authentication account for exactly one existing profile. SUPER_ADMIN can provision any supported role; ADMIN can provision TEACHER, STUDENT or PARENT_GUARDIAN accounts.
+url: "{{baseUrl}}/api/v1/auth/accounts"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "password": "stringstring",
+      "role": "TEACHER",
+      "username": "OnOn",
+      "adminId": 525,
+      "superAdminId": 985,
+      "teacherId": 7527,
+      "studentId": 8389,
+      "parentGuardianId": 3211
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearerToken}}"
+settings: {}
+examples: ./.resources/Create authentication account.resources/examples
+order: 1000

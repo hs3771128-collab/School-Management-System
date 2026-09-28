@@ -1,0 +1,45 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/students"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 4520,
+          "studentCode": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "2018-08-11",
+          "gender": "MALE",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "status": "TRANSFERRED",
+          "createdAt": "1969-04-23T06:31:24.874Z",
+          "updatedAt": "1977-04-27T15:32:54.810Z"
+        },
+        {
+          "id": 9538,
+          "studentCode": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "1988-11-27",
+          "gender": "MALE",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "status": "TRANSFERRED",
+          "createdAt": "1982-05-22T06:49:40.483Z",
+          "updatedAt": "1978-10-27T03:21:22.329Z"
+        }
+      ]
+order: 1000

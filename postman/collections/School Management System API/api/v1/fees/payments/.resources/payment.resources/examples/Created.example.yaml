@@ -1,0 +1,34 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/fees/payments"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "amount": 2838.2074427916887,
+        "invoiceId": 8072,
+        "method": "ONLINE",
+        "paymentDate": "1954-11-26",
+        "reference": "string"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 7904,
+        "invoiceId": 441,
+        "amount": 1290.7633953512677,
+        "paymentDate": "1969-04-19",
+        "method": "BANK_TRANSFER",
+        "reference": "string"
+      }
+order: 1000

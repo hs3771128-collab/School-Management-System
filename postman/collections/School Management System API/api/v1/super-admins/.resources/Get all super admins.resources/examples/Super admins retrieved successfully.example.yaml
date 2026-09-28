@@ -1,0 +1,47 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/super-admins"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 5954,
+          "superAdminCode": "string",
+          "username": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "2011-11-07",
+          "gender": "OTHER",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "status": "INACTIVE",
+          "createdAt": "1966-11-08T04:51:47.650Z",
+          "updatedAt": "1963-09-05T19:43:55.869Z"
+        },
+        {
+          "id": 993,
+          "superAdminCode": "string",
+          "username": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "2004-09-08",
+          "gender": "FEMALE",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "status": "ACTIVE",
+          "createdAt": "1986-09-26T00:16:20.772Z",
+          "updatedAt": "1958-11-05T04:56:30.828Z"
+        }
+      ]
+order: 1000

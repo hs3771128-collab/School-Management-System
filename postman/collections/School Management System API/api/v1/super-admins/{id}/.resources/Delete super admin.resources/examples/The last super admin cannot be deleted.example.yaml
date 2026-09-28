@@ -1,0 +1,15 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/super-admins/:id"
+  method: DELETE
+  pathVariables:
+    - key: id
+      value: "1"
+      description: Super admin ID
+response:
+  statusCode: 409
+  statusText: Conflict
+  body:
+    type: text
+    content: ""
+order: 3000

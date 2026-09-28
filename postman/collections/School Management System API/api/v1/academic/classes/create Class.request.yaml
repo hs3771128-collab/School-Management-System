@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/classes"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "gradeLevel": 1664,
+      "name": "string",
+      "active": true
+    }
+settings: {}
+examples: ./.resources/create Class.resources/examples
+order: 3000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/super-admins/code/:superAdminCode"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: superAdminCode
+    value: SADM-001
+    description: Unique super admin code
+settings: {}
+examples: ./.resources/Get super admin by code.resources/examples
+order: 1000

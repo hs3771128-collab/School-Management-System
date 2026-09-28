@@ -1,0 +1,13 @@
+$kind: http-request
+name: Delete parent/guardian
+url: "{{baseUrl}}/api/v1/parent-guardians/:id"
+method: DELETE
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: id
+    value: "1"
+    description: Parent/Guardian ID
+settings: {}
+examples: ./.resources/Delete parent-guardian.resources/examples
+order: 3000

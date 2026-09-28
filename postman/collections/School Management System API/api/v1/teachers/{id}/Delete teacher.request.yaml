@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teachers/:id"
+method: DELETE
+pathVariables:
+  - key: id
+    value: "1"
+    description: Teacher ID
+settings: {}
+examples: ./.resources/Delete teacher.resources/examples
+order: 3000

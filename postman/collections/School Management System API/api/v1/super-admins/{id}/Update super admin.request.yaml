@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/super-admins/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  - key: id
+    value: "1"
+    description: Super admin ID
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "string",
+      "dateOfBirth": "1976-02-08",
+      "gender": "FEMALE",
+      "email": "vXKDya@nZshyyxl.tuyk",
+      "phone": "string",
+      "address": "string",
+      "status": "SUSPENDED"
+    }
+settings: {}
+examples: ./.resources/Update super admin.resources/examples
+order: 2000

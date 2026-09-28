@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/students/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  - key: id
+    value: "1"
+    description: Student ID
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "string",
+      "dateOfBirth": "2013-03-18",
+      "gender": "FEMALE",
+      "email": "Bfj9EVXVzMnsMi@UheU.ngmp",
+      "phone": "string",
+      "address": "string",
+      "status": "SUSPENDED"
+    }
+settings: {}
+examples: ./.resources/Update student.resources/examples
+order: 2000

@@ -1,0 +1,41 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/parent-guardians/:id"
+  method: PUT
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  pathVariables:
+    - key: id
+      value: "1"
+      description: Parent/Guardian ID
+  body:
+    type: json
+    content: |-
+      {
+        "firstName": "string",
+        "lastName": "string",
+        "phone": "string",
+        "relationshipType": "GUARDIAN",
+        "email": "zjaaw6K2Y4t@lskAvGgbaFXa.dh",
+        "address": "string",
+        "cnic": "strin",
+        "occupation": "string"
+      }
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "timestamp": "1986-03-07T05:25:26.830Z",
+        "status": 9020,
+        "error": "string",
+        "message": "string",
+        "path": "string",
+        "details": ""
+      }
+order: 2000

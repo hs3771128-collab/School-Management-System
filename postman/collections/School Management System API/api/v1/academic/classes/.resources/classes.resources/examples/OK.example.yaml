@@ -1,0 +1,33 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/classes"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 674,
+          "name": "string",
+          "gradeLevel": 6971,
+          "active": true,
+          "createdAt": "1975-01-24T07:04:49.117Z",
+          "updatedAt": "2021-03-20T16:48:04.004Z"
+        },
+        {
+          "id": 5326,
+          "name": "string",
+          "gradeLevel": 7233,
+          "active": true,
+          "createdAt": "1967-04-14T21:38:38.375Z",
+          "updatedAt": "1980-10-23T12:18:49.274Z"
+        }
+      ]
+order: 1000

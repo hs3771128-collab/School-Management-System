@@ -1,0 +1,35 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/sections"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "capacity": 5971,
+        "name": "string",
+        "schoolClassId": 3093,
+        "active": false
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 4205,
+        "name": "string",
+        "schoolClassId": 8298,
+        "schoolClassName": "string",
+        "capacity": 5877,
+        "active": true,
+        "createdAt": "1968-12-20T04:00:41.153Z",
+        "updatedAt": "2007-08-25T08:44:42.470Z"
+      }
+order: 1000

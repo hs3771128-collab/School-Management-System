@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/enrollments/:id"
+method: DELETE
+pathVariables:
+  id: "3357"
+settings: {}
+examples: ./.resources/delete Enrollment.resources/examples
+order: 2000

@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/sections"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 3265,
+          "name": "string",
+          "schoolClassId": 5418,
+          "schoolClassName": "string",
+          "capacity": 3953,
+          "active": false,
+          "createdAt": "1992-04-17T22:09:14.319Z",
+          "updatedAt": "2014-11-07T11:47:15.695Z"
+        },
+        {
+          "id": 1643,
+          "name": "string",
+          "schoolClassId": 8121,
+          "schoolClassName": "string",
+          "capacity": 6707,
+          "active": true,
+          "createdAt": "2009-03-26T12:07:25.312Z",
+          "updatedAt": "1970-12-03T22:20:37.764Z"
+        }
+      ]
+order: 1000

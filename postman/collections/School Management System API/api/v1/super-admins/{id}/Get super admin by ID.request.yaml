@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/super-admins/:id"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: id
+    value: "1"
+    description: Super admin ID
+settings: {}
+examples: ./.resources/Get super admin by ID.resources/examples
+order: 1000

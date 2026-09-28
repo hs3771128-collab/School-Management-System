@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/enrollments/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  id: "3357"
+body:
+  type: json
+  content: |-
+    {
+      "academicYearId": 6456,
+      "schoolClassId": 1789,
+      "sectionId": 1567,
+      "studentId": 6278,
+      "status": "ACTIVE"
+    }
+settings: {}
+examples: ./.resources/update Enrollment.resources/examples
+order: 1000

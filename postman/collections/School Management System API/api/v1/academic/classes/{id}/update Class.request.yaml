@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/classes/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  id: "3357"
+body:
+  type: json
+  content: |-
+    {
+      "gradeLevel": 1664,
+      "name": "string",
+      "active": true
+    }
+settings: {}
+examples: ./.resources/update Class.resources/examples
+order: 1000

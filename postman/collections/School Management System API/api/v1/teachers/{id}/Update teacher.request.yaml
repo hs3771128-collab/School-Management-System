@@ -1,0 +1,28 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teachers/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  - key: id
+    value: "1"
+    description: Teacher ID
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "string",
+      "dateOfBirth": "1967-11-26",
+      "gender": "OTHER",
+      "email": "hC49XbU6EI4t1oA@oRJLtcILBWjncuBUxYqxZNNkuDy.onbj",
+      "phone": "string",
+      "address": "string",
+      "qualification": "string",
+      "joiningDate": "1960-07-07",
+      "status": "ACTIVE"
+    }
+settings: {}
+examples: ./.resources/Update teacher.resources/examples
+order: 2000

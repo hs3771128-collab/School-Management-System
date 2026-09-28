@@ -1,0 +1,49 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/teachers"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 2161,
+          "employeeCode": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "2008-08-18",
+          "gender": "FEMALE",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "qualification": "string",
+          "joiningDate": "1969-06-17",
+          "status": "INACTIVE",
+          "createdAt": "1959-04-19T04:52:21.096Z",
+          "updatedAt": "1993-08-06T11:56:16.676Z"
+        },
+        {
+          "id": 433,
+          "employeeCode": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "1953-01-01",
+          "gender": "FEMALE",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "qualification": "string",
+          "joiningDate": "2002-08-18",
+          "status": "ON_LEAVE",
+          "createdAt": "1958-06-17T19:41:35.207Z",
+          "updatedAt": "2025-12-01T14:56:53.040Z"
+        }
+      ]
+order: 1000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/attendance/student/:studentId?from=1977-03-17&to=1977-03-17"
+method: GET
+headers:
+  Accept: "*/*"
+queryParams:
+  from: 1977-03-17
+  to: 1977-03-17
+pathVariables:
+  studentId: "3357"
+settings: {}
+examples: ./.resources/by Student.resources/examples
+order: 1000

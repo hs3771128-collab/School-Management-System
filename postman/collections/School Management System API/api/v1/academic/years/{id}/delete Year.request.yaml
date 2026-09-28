@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/years/:id"
+method: DELETE
+pathVariables:
+  id: "3357"
+settings: {}
+examples: ./.resources/delete Year.resources/examples
+order: 2000

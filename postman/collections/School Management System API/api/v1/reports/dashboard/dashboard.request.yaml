@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/reports/dashboard"
+method: GET
+headers:
+  Accept: "*/*"
+settings: {}
+examples: ./.resources/dashboard.resources/examples
+order: 1000

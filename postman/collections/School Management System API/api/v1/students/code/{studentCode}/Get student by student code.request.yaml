@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/students/code/:studentCode"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: studentCode
+    value: STU-001
+    description: Unique student code
+settings: {}
+examples: ./.resources/Get student by student code.resources/examples
+order: 1000

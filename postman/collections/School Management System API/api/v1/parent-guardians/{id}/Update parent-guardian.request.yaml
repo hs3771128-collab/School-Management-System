@@ -1,0 +1,27 @@
+$kind: http-request
+name: Update parent/guardian
+url: "{{baseUrl}}/api/v1/parent-guardians/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  - key: id
+    value: "1"
+    description: Parent/Guardian ID
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "string",
+      "phone": "string",
+      "relationshipType": "GUARDIAN",
+      "email": "zjaaw6K2Y4t@lskAvGgbaFXa.dh",
+      "address": "string",
+      "cnic": "strin",
+      "occupation": "string"
+    }
+settings: {}
+examples: ./.resources/Update parent-guardian.resources/examples
+order: 2000

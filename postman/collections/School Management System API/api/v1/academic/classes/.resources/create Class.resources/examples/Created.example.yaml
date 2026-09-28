@@ -1,0 +1,32 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/classes"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "gradeLevel": 1664,
+        "name": "string",
+        "active": true
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 8528,
+        "name": "string",
+        "gradeLevel": 7374,
+        "active": true,
+        "createdAt": "1985-11-11T05:35:27.758Z",
+        "updatedAt": "2019-12-12T17:38:59.684Z"
+      }
+order: 1000

@@ -1,0 +1,43 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/teacher-assignments"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "academicYearId": 9898,
+        "sectionId": 2243,
+        "subjectId": 8321,
+        "teacherId": 461
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 4922,
+        "teacherId": 7897,
+        "employeeCode": "string",
+        "teacherName": "string",
+        "academicYearId": 5243,
+        "academicYearName": "string",
+        "sectionId": 1494,
+        "sectionName": "string",
+        "schoolClassId": 2758,
+        "schoolClassName": "string",
+        "subjectId": 7164,
+        "subjectCode": "string",
+        "subjectName": "string",
+        "createdAt": "1974-04-20T09:15:25.224Z",
+        "updatedAt": "1995-09-24T07:28:42.484Z",
+        "version": 1057
+      }
+order: 1000

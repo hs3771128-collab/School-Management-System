@@ -1,0 +1,49 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/parent-guardians"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 829,
+          "studentId": 4844,
+          "studentCode": "string",
+          "studentName": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "cnic": "string",
+          "occupation": "string",
+          "relationshipType": "PARENT",
+          "createdAt": "2016-08-07T02:42:53.208Z",
+          "updatedAt": "1965-07-19T23:29:26.374Z"
+        },
+        {
+          "id": 9079,
+          "studentId": 1232,
+          "studentCode": "string",
+          "studentName": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "cnic": "string",
+          "occupation": "string",
+          "relationshipType": "PARENT",
+          "createdAt": "2014-08-15T20:14:10.425Z",
+          "updatedAt": "2009-03-12T08:25:44.918Z"
+        }
+      ]
+order: 1000

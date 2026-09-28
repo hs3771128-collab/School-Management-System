@@ -1,0 +1,47 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/admins"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 1646,
+          "adminCode": "string",
+          "username": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "1953-01-06",
+          "gender": "OTHER",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "status": "SUSPENDED",
+          "createdAt": "1980-10-27T09:55:28.478Z",
+          "updatedAt": "2017-08-14T15:15:38.919Z"
+        },
+        {
+          "id": 8515,
+          "adminCode": "string",
+          "username": "string",
+          "firstName": "string",
+          "lastName": "string",
+          "dateOfBirth": "1969-01-12",
+          "gender": "FEMALE",
+          "email": "string",
+          "phone": "string",
+          "address": "string",
+          "status": "SUSPENDED",
+          "createdAt": "1960-12-22T13:01:23.523Z",
+          "updatedAt": "1948-09-25T14:41:43.802Z"
+        }
+      ]
+order: 1000

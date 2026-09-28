@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/exams/academic-year/:yearId"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  yearId: "3357"
+settings: {}
+examples: ./.resources/exams.resources/examples
+order: 1000

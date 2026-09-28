@@ -1,0 +1,26 @@
+$kind: http-request
+description: Creates a parent/guardian record for a student
+url: "{{baseUrl}}/api/v1/parent-guardians"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "stri",
+      "password": "stringstring",
+      "phone": "string",
+      "relationshipType": "PARENT",
+      "studentCode": "string",
+      "username": "Zr1pxIoHX2",
+      "email": "Luc@lgOuvhHbAQHzxajnvRKJgdpoBMWhJnS.vuev",
+      "address": "string",
+      "cnic": "string",
+      "occupation": "stri"
+    }
+settings: {}
+examples: ./.resources/Create parent or guardian.resources/examples
+order: 4000

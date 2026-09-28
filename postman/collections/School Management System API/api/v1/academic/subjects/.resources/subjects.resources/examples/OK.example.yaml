@@ -1,0 +1,35 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/subjects"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 3921,
+          "code": "string",
+          "name": "string",
+          "description": "string",
+          "active": true,
+          "createdAt": "1967-12-29T13:27:38.993Z",
+          "updatedAt": "1949-08-07T21:58:15.120Z"
+        },
+        {
+          "id": 7485,
+          "code": "string",
+          "name": "string",
+          "description": "string",
+          "active": true,
+          "createdAt": "1986-04-17T19:58:20.513Z",
+          "updatedAt": "1970-02-01T16:14:04.506Z"
+        }
+      ]
+order: 1000

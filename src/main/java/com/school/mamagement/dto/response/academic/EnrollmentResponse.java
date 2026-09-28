@@ -1,0 +1,2 @@
+package com.school.mamagement.dto.response.academic; import com.school.mamagement.enums.EnrollmentStatus; import lombok.*; import java.time.*;
+@Getter @Builder public class EnrollmentResponse { Long id,studentId,academicYearId,schoolClassId,sectionId; String studentCode,academicYearName,schoolClassName,sectionName; EnrollmentStatus status; LocalDate enrolledAt; LocalDateTime createdAt,updatedAt; }

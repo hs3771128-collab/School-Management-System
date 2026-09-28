@@ -1,0 +1,13 @@
+$kind: http-request
+name: Get parent/guardian by ID
+url: "{{baseUrl}}/api/v1/parent-guardians/:id"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: id
+    value: "1"
+    description: Parent/Guardian ID
+settings: {}
+examples: ./.resources/Get parent-guardian by ID.resources/examples
+order: 1000

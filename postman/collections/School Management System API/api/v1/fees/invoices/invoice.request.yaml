@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/fees/invoices"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "academicYearId": 9643,
+      "dueDate": "2019-02-08",
+      "studentId": 6668,
+      "totalAmount": 587.0290876144747
+    }
+settings: {}
+examples: ./.resources/invoice.resources/examples
+order: 2000

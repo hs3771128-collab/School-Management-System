@@ -1,0 +1,35 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/teachers/employee/:employeeCode"
+  method: GET
+  headers:
+    Accept: "*/*"
+  pathVariables:
+    - key: employeeCode
+      value: EMP-001
+      description: Unique employee code
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 7329,
+        "employeeCode": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "dateOfBirth": "1976-08-25",
+        "gender": "FEMALE",
+        "email": "string",
+        "phone": "string",
+        "address": "string",
+        "qualification": "string",
+        "joiningDate": "1962-10-02",
+        "status": "ACTIVE",
+        "createdAt": "1984-08-12T04:25:19.463Z",
+        "updatedAt": "1980-03-14T07:21:12.109Z"
+      }
+order: 1000

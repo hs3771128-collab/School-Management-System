@@ -1,0 +1,41 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/exams/academic-year/:yearId"
+  method: GET
+  headers:
+    Accept: "*/*"
+  pathVariables:
+    yearId: "3357"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 978,
+          "academicYearId": 8261,
+          "name": "string",
+          "academicYearName": "string",
+          "startDate": "1968-02-06",
+          "endDate": "2004-08-13",
+          "status": "CANCELLED",
+          "createdAt": "1959-12-13T15:45:44.675Z",
+          "updatedAt": "2001-12-20T13:50:09.559Z"
+        },
+        {
+          "id": 7331,
+          "academicYearId": 7081,
+          "name": "string",
+          "academicYearName": "string",
+          "startDate": "2014-02-02",
+          "endDate": "1981-07-19",
+          "status": "PLANNED",
+          "createdAt": "1952-10-03T13:16:28.849Z",
+          "updatedAt": "1962-02-05T16:26:58.215Z"
+        }
+      ]
+order: 1000

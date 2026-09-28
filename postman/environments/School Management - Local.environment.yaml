@@ -1,0 +1,16 @@
+name: School Management - Local
+values:
+  - key: base_url
+    value: ''
+  - key: access_token
+    value: ''
+  - key: super_admin_id
+    value: ''
+  - key: admin_id
+    value: ''
+  - key: teacher_id
+    value: ''
+  - key: student_id
+    value: ''
+  - key: parent_guardian_id
+    value: ''

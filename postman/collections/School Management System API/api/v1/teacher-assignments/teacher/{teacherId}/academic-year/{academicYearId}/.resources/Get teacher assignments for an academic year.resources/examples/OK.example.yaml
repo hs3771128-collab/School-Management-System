@@ -1,0 +1,56 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/teacher-assignments/teacher/:teacherId/academic-year/:academicYearId"
+  method: GET
+  headers:
+    Accept: "*/*"
+  pathVariables:
+    teacherId: "3357"
+    academicYearId: "3357"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 7316,
+          "teacherId": 1261,
+          "employeeCode": "string",
+          "teacherName": "string",
+          "academicYearId": 3659,
+          "academicYearName": "string",
+          "sectionId": 937,
+          "sectionName": "string",
+          "schoolClassId": 2206,
+          "schoolClassName": "string",
+          "subjectId": 2780,
+          "subjectCode": "string",
+          "subjectName": "string",
+          "createdAt": "2014-09-30T03:30:39.893Z",
+          "updatedAt": "1971-05-30T11:04:31.436Z",
+          "version": 9473
+        },
+        {
+          "id": 7595,
+          "teacherId": 1402,
+          "employeeCode": "string",
+          "teacherName": "string",
+          "academicYearId": 4139,
+          "academicYearName": "string",
+          "sectionId": 7203,
+          "sectionName": "string",
+          "schoolClassId": 8094,
+          "schoolClassName": "string",
+          "subjectId": 640,
+          "subjectCode": "string",
+          "subjectName": "string",
+          "createdAt": "1961-10-31T16:16:21.238Z",
+          "updatedAt": "1967-08-28T09:14:06.861Z",
+          "version": 1155
+        }
+      ]
+order: 1000

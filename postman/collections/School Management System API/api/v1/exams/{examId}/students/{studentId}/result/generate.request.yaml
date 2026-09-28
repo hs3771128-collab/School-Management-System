@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/exams/:examId/students/:studentId/result"
+method: POST
+headers:
+  Accept: "*/*"
+pathVariables:
+  examId: "3357"
+  studentId: "3357"
+settings: {}
+examples: ./.resources/generate.resources/examples
+order: 2000

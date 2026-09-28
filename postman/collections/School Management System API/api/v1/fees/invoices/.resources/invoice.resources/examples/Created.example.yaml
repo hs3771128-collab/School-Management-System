@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/fees/invoices"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "academicYearId": 9643,
+        "dueDate": "2019-02-08",
+        "studentId": 6668,
+        "totalAmount": 587.0290876144747
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 2925,
+        "studentId": 4903,
+        "academicYearId": 5333,
+        "invoiceNumber": "string",
+        "studentCode": "string",
+        "dueDate": "2024-11-20",
+        "totalAmount": 2022.5308657505648,
+        "paidAmount": 3887.4733743448296,
+        "balance": 6864.272278495599,
+        "status": "UNPAID"
+      }
+order: 1000

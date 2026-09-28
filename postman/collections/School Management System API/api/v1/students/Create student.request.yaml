@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/students"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "string",
+      "password": "stringstring",
+      "username": "slg8Tsba",
+      "dateOfBirth": "1946-11-16",
+      "gender": "MALE",
+      "email": "N-h23L@pYQgyxmERuGURmACYoCjCzvFjUnDsyq.kxm",
+      "phone": "string",
+      "address": "string",
+      "status": "INACTIVE"
+    }
+settings: {}
+examples: ./.resources/Create student.resources/examples
+order: 4000

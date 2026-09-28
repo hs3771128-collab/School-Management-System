@@ -1,0 +1,9 @@
+$kind: http-request
+name: Get all parent/guardian records
+url: "{{baseUrl}}/api/v1/parent-guardians"
+method: GET
+headers:
+  Accept: "*/*"
+settings: {}
+examples: ./.resources/Get all parent-guardian records.resources/examples
+order: 3000

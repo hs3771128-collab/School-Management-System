@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/attendance/:id"
+  method: PUT
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  pathVariables:
+    id: "3357"
+  body:
+    type: json
+    content: |-
+      {
+        "attendanceDate": "2022-04-15",
+        "status": "PRESENT",
+        "studentId": 7357,
+        "remarks": "string"
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 3347,
+        "studentId": 5781,
+        "studentCode": "string",
+        "attendanceDate": "1991-10-16",
+        "status": "ABSENT",
+        "remarks": "string",
+        "createdAt": "2016-07-16T20:10:40.814Z",
+        "updatedAt": "1990-05-31T08:38:06.149Z"
+      }
+order: 1000

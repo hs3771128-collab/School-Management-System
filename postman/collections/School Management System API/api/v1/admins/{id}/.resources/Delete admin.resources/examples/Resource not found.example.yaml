@@ -1,0 +1,27 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/admins/:id"
+  method: DELETE
+  headers:
+    Accept: "*/*"
+  pathVariables:
+    - key: id
+      value: "1"
+      description: Admin ID
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "timestamp": "1986-03-07T05:25:26.830Z",
+        "status": 9020,
+        "error": "string",
+        "message": "string",
+        "path": "string",
+        "details": ""
+      }
+order: 2000

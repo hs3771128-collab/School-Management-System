@@ -1,0 +1,36 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/subjects/:id"
+  method: PUT
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  pathVariables:
+    id: "3357"
+  body:
+    type: json
+    content: |-
+      {
+        "code": "string",
+        "name": "string",
+        "description": "string",
+        "active": false
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 1651,
+        "code": "string",
+        "name": "string",
+        "description": "string",
+        "active": true,
+        "createdAt": "1982-07-10T15:38:59.030Z",
+        "updatedAt": "1993-05-25T17:03:00.656Z"
+      }
+order: 1000

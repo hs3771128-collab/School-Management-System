@@ -1,0 +1,34 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/fees/structures"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "academicYearId": 8300,
+        "amount": 470.2388777835065,
+        "name": "string",
+        "schoolClassId": 6606,
+        "active": true
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 3325,
+        "academicYearId": 5096,
+        "schoolClassId": 7970,
+        "name": "string",
+        "amount": 1522.3631896449065,
+        "active": false
+      }
+order: 1000

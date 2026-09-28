@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/subjects/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  id: "3357"
+body:
+  type: json
+  content: |-
+    {
+      "code": "string",
+      "name": "string",
+      "description": "string",
+      "active": false
+    }
+settings: {}
+examples: ./.resources/update Subject.resources/examples
+order: 1000

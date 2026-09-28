@@ -1,0 +1,49 @@
+$kind: http-example
+name: Parent/Guardian created successfully
+request:
+  url: "{{baseUrl}}/api/v1/parent-guardians"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "firstName": "string",
+        "lastName": "stri",
+        "password": "stringstring",
+        "phone": "string",
+        "relationshipType": "PARENT",
+        "studentCode": "string",
+        "username": "Zr1pxIoHX2",
+        "email": "Luc@lgOuvhHbAQHzxajnvRKJgdpoBMWhJnS.vuev",
+        "address": "string",
+        "cnic": "string",
+        "occupation": "stri"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 8299,
+        "studentId": 1999,
+        "studentCode": "string",
+        "studentName": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "phone": "string",
+        "address": "string",
+        "cnic": "string",
+        "occupation": "string",
+        "relationshipType": "GUARDIAN",
+        "createdAt": "1965-05-26T11:22:29.409Z",
+        "updatedAt": "2018-10-19T20:42:32.679Z"
+      }
+order: 1000

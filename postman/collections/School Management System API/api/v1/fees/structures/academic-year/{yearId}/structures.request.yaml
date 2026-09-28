@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/fees/structures/academic-year/:yearId"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  yearId: "3357"
+settings: {}
+examples: ./.resources/structures.resources/examples
+order: 1000

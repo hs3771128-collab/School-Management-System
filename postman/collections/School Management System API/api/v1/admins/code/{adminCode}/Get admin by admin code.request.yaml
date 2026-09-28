@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/admins/code/:adminCode"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: adminCode
+    value: ADM-001
+    description: Unique admin code
+settings: {}
+examples: ./.resources/Get admin by admin code.resources/examples
+order: 1000

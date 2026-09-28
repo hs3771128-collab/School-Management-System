@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/attendance/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  id: "3357"
+body:
+  type: json
+  content: |-
+    {
+      "attendanceDate": "2022-04-15",
+      "status": "PRESENT",
+      "studentId": 7357,
+      "remarks": "string"
+    }
+settings: {}
+examples: ./.resources/update 1.resources/examples
+order: 1000

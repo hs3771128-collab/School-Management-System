@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/reports/students/:studentId/attendance"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  studentId: "3357"
+settings: {}
+examples: ./.resources/student Attendance.resources/examples
+order: 1000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teacher-assignments/:id"
+method: DELETE
+pathVariables:
+  id: "3357"
+settings: {}
+examples: ./.resources/Delete teacher assignment.resources/examples
+order: 3000

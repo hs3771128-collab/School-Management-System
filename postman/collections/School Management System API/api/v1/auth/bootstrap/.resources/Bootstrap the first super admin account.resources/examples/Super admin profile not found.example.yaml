@@ -1,0 +1,39 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/auth/bootstrap"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "firstName": "System",
+        "lastName": "Administrator",
+        "password": "StrongPassword123!",
+        "status": "ACTIVE",
+        "username": "superadmin",
+        "dateOfBirth": "1990-01-01",
+        "gender": "MALE",
+        "email": "superadmin@school.com",
+        "phone": "03001234567",
+        "address": "School Management System"
+      }
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "timestamp": "1986-03-07T05:25:26.830Z",
+        "status": 9020,
+        "error": "string",
+        "message": "string",
+        "path": "string",
+        "details": ""
+      }
+order: 3000

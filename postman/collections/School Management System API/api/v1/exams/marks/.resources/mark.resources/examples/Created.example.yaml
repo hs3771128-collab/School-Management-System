@@ -1,0 +1,35 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/exams/marks"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "examSubjectId": 6479,
+        "marksObtained": 729.945477235332,
+        "studentId": 7047
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 9485,
+        "examSubjectId": 1288,
+        "studentId": 6101,
+        "studentCode": "string",
+        "subjectCode": "string",
+        "marksObtained": 3901.209403605006,
+        "maxMarks": 2637.0701012368468,
+        "createdAt": "2002-04-23T19:08:30.382Z",
+        "updatedAt": "1964-07-20T02:07:57.372Z"
+      }
+order: 1000

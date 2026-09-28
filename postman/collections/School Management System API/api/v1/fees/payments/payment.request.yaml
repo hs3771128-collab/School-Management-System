@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/fees/payments"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "amount": 2838.2074427916887,
+      "invoiceId": 8072,
+      "method": "ONLINE",
+      "paymentDate": "1954-11-26",
+      "reference": "string"
+    }
+settings: {}
+examples: ./.resources/payment.resources/examples
+order: 1000

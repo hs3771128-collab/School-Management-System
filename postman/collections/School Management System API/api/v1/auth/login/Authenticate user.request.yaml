@@ -1,0 +1,17 @@
+$kind: http-request
+description: Authenticates a username and password and returns a signed JWT access token.
+url: "{{baseUrl}}/api/v1/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "password": "ExamplePassword123!",
+      "username": "superadmin"
+    }
+settings: {}
+examples: ./.resources/Authenticate user.resources/examples
+order: 1000

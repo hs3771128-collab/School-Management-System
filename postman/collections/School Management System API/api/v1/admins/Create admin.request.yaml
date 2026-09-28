@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/admins"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "string",
+      "password": "stringstring",
+      "username": "X4X4",
+      "dateOfBirth": "2026-01-28",
+      "gender": "FEMALE",
+      "email": "logb7fmVarXa@wrjvkkFKKwMYoRaeKSNTsuHXRXVrMSz.wicb",
+      "phone": "string",
+      "address": "string",
+      "status": "INACTIVE"
+    }
+settings: {}
+examples: ./.resources/Create admin.resources/examples
+order: 4000

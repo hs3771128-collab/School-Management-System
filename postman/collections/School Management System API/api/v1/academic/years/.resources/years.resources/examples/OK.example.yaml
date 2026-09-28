@@ -1,0 +1,35 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/years"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 4814,
+          "name": "string",
+          "startDate": "1980-04-30",
+          "endDate": "1948-08-27",
+          "status": "CLOSED",
+          "createdAt": "1991-07-01T19:15:23.549Z",
+          "updatedAt": "1981-03-02T19:17:04.356Z"
+        },
+        {
+          "id": 926,
+          "name": "string",
+          "startDate": "1959-05-21",
+          "endDate": "1976-03-03",
+          "status": "CLOSED",
+          "createdAt": "2022-06-27T17:50:31.941Z",
+          "updatedAt": "2012-02-19T11:11:33.813Z"
+        }
+      ]
+order: 1000

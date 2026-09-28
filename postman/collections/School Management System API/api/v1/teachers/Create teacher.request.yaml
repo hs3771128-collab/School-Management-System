@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teachers"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "string",
+      "lastName": "string",
+      "password": "stringstring",
+      "username": "HWTcUpq",
+      "dateOfBirth": "1947-04-06",
+      "gender": "FEMALE",
+      "email": "MXFWt0cS9oT@bNkSIqhFZkpXnmoqtfutryUhx.uk",
+      "phone": "str",
+      "address": "string",
+      "qualification": "string",
+      "joiningDate": "1953-11-16",
+      "status": "INACTIVE"
+    }
+settings: {}
+examples: ./.resources/Create teacher.resources/examples
+order: 4000

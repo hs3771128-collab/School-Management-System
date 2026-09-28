@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/parent-guardians"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "firstName": "string",
+        "lastName": "stri",
+        "password": "stringstring",
+        "phone": "string",
+        "relationshipType": "PARENT",
+        "studentCode": "string",
+        "username": "Zr1pxIoHX2",
+        "email": "Luc@lgOuvhHbAQHzxajnvRKJgdpoBMWhJnS.vuev",
+        "address": "string",
+        "cnic": "string",
+        "occupation": "stri"
+      }
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "timestamp": "1986-03-07T05:25:26.830Z",
+        "status": 9020,
+        "error": "string",
+        "message": "string",
+        "path": "string",
+        "details": ""
+      }
+order: 3000

@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/sections"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "capacity": 5971,
+      "name": "string",
+      "schoolClassId": 3093,
+      "active": false
+    }
+settings: {}
+examples: ./.resources/create Section.resources/examples
+order: 3000

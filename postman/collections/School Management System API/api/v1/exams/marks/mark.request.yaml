@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/exams/marks"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "examSubjectId": 6479,
+      "marksObtained": 729.945477235332,
+      "studentId": 7047
+    }
+settings: {}
+examples: ./.resources/mark.resources/examples
+order: 1000

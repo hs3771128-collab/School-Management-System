@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teacher-assignments/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  id: "3357"
+body:
+  type: json
+  content: |-
+    {
+      "academicYearId": 9898,
+      "sectionId": 2243,
+      "subjectId": 8321,
+      "teacherId": 461
+    }
+settings: {}
+examples: ./.resources/Update teacher assignment.resources/examples
+order: 2000

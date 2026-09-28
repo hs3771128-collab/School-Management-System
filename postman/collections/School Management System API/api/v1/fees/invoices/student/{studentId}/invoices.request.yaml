@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/fees/invoices/student/:studentId"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  studentId: "3357"
+settings: {}
+examples: ./.resources/invoices.resources/examples
+order: 1000

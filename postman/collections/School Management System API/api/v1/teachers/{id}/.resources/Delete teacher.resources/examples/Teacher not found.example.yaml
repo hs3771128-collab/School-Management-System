@@ -1,0 +1,15 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/teachers/:id"
+  method: DELETE
+  pathVariables:
+    - key: id
+      value: "1"
+      description: Teacher ID
+response:
+  statusCode: 404
+  statusText: Not Found
+  body:
+    type: text
+    content: ""
+order: 2000

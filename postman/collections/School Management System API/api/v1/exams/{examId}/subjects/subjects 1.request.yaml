@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/exams/:examId/subjects"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  examId: "3357"
+settings: {}
+examples: ./.resources/subjects 1.resources/examples
+order: 1000

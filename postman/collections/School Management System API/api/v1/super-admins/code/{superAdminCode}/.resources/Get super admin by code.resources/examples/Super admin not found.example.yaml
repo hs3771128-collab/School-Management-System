@@ -1,0 +1,34 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/super-admins/code/:superAdminCode"
+  method: GET
+  headers:
+    Accept: "*/*"
+  pathVariables:
+    - key: superAdminCode
+      value: SADM-001
+      description: Unique super admin code
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 6809,
+        "superAdminCode": "string",
+        "username": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "dateOfBirth": "2005-01-11",
+        "gender": "MALE",
+        "email": "string",
+        "phone": "string",
+        "address": "string",
+        "status": "INACTIVE",
+        "createdAt": "1989-04-28T01:35:38.830Z",
+        "updatedAt": "2001-01-18T06:32:04.739Z"
+      }
+order: 2000

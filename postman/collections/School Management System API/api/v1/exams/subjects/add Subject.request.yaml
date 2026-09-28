@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/exams/subjects"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "examId": 9230,
+      "maxMarks": 5131.162223751678,
+      "passingMarks": 9055.048711330972,
+      "subjectId": 4796
+    }
+settings: {}
+examples: ./.resources/add Subject.resources/examples
+order: 1000

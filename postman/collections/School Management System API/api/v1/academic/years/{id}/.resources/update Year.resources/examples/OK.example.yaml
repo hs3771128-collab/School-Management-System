@@ -1,0 +1,36 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/years/:id"
+  method: PUT
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  pathVariables:
+    id: "3357"
+  body:
+    type: json
+    content: |-
+      {
+        "endDate": "1956-06-07",
+        "name": "string",
+        "startDate": "2020-12-27",
+        "status": "ACTIVE"
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 7710,
+        "name": "string",
+        "startDate": "1983-12-13",
+        "endDate": "1965-08-25",
+        "status": "ACTIVE",
+        "createdAt": "1968-08-27T12:39:44.348Z",
+        "updatedAt": "1963-12-12T14:37:47.248Z"
+      }
+order: 1000

@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/exams"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "academicYearId": 4612,
+        "endDate": "1985-03-15",
+        "name": "string",
+        "startDate": "1956-12-11",
+        "status": "CANCELLED"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 3203,
+        "academicYearId": 2824,
+        "name": "string",
+        "academicYearName": "string",
+        "startDate": "1960-01-30",
+        "endDate": "1952-09-20",
+        "status": "COMPLETED",
+        "createdAt": "2020-02-09T15:26:05.071Z",
+        "updatedAt": "2011-10-25T20:52:34.078Z"
+      }
+order: 1000

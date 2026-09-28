@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/years/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+pathVariables:
+  id: "3357"
+body:
+  type: json
+  content: |-
+    {
+      "endDate": "1956-06-07",
+      "name": "string",
+      "startDate": "2020-12-27",
+      "status": "ACTIVE"
+    }
+settings: {}
+examples: ./.resources/update Year.resources/examples
+order: 1000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/super-admins"
+method: GET
+headers:
+  Accept: "*/*"
+settings: {}
+examples: ./.resources/Get all super admins.resources/examples
+order: 3000

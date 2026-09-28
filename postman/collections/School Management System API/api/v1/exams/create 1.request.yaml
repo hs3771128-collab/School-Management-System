@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/exams"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "academicYearId": 4612,
+      "endDate": "1985-03-15",
+      "name": "string",
+      "startDate": "1956-12-11",
+      "status": "CANCELLED"
+    }
+settings: {}
+examples: ./.resources/create 1.resources/examples
+order: 5000

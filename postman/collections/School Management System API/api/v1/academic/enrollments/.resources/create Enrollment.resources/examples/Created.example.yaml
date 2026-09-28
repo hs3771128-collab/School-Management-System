@@ -1,0 +1,41 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/enrollments"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "academicYearId": 6456,
+        "schoolClassId": 1789,
+        "sectionId": 1567,
+        "studentId": 6278,
+        "status": "ACTIVE"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 5949,
+        "studentId": 3295,
+        "academicYearId": 2682,
+        "schoolClassId": 1528,
+        "sectionId": 729,
+        "studentCode": "string",
+        "academicYearName": "string",
+        "schoolClassName": "string",
+        "sectionName": "string",
+        "status": "ACTIVE",
+        "enrolledAt": "2019-10-10",
+        "createdAt": "1955-08-17T04:26:06.373Z",
+        "updatedAt": "1979-01-05T09:07:50.307Z"
+      }
+order: 1000

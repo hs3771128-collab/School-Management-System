@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teachers/:id"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: id
+    value: "1"
+    description: Teacher ID
+settings: {}
+examples: ./.resources/Get teacher by ID.resources/examples
+order: 1000

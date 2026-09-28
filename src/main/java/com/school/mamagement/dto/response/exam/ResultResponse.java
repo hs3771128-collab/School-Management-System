@@ -1,0 +1,2 @@
+package com.school.mamagement.dto.response.exam; import lombok.*; import java.math.BigDecimal;
+@Getter @Builder public class ResultResponse { Long id,examId,studentId; String examName,studentCode,grade; BigDecimal totalMarks,obtainedMarks,percentage; boolean passed; }

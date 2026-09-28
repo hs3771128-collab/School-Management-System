@@ -1,0 +1,47 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/academic/enrollments"
+  method: GET
+  headers:
+    Accept: "*/*"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      [
+        {
+          "id": 6135,
+          "studentId": 5536,
+          "academicYearId": 5767,
+          "schoolClassId": 6088,
+          "sectionId": 9946,
+          "studentCode": "string",
+          "academicYearName": "string",
+          "schoolClassName": "string",
+          "sectionName": "string",
+          "status": "TRANSFERRED",
+          "enrolledAt": "1986-06-14",
+          "createdAt": "2002-12-11T01:29:07.787Z",
+          "updatedAt": "2006-09-18T04:58:59.302Z"
+        },
+        {
+          "id": 9237,
+          "studentId": 8690,
+          "academicYearId": 4057,
+          "schoolClassId": 9261,
+          "sectionId": 9313,
+          "studentCode": "string",
+          "academicYearName": "string",
+          "schoolClassName": "string",
+          "sectionName": "string",
+          "status": "ACTIVE",
+          "enrolledAt": "1971-09-12",
+          "createdAt": "1960-06-09T10:15:59.886Z",
+          "updatedAt": "2001-01-24T03:12:54.446Z"
+        }
+      ]
+order: 1000

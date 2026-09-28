@@ -1,0 +1,18 @@
+$kind: collection
+description: |-
+  REST API for the School Management System.
+
+  API version: v1.
+  Protected endpoints use JWT {{bearer_token_0i4p}}
+  Use the authentication login endpoint to obtain an access token.
+
+
+  Contact Support:
+   Name: School Management System Team
+variables:
+  - key: baseUrl
+    value: http://localhost:8080
+    disabled: false
+  - key: bearer_token_0i4p
+    secret: true
+    disabled: false

@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/academic/enrollments/student/:studentId"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  studentId: "3357"
+settings: {}
+examples: ./.resources/enrollments By Student.resources/examples
+order: 1000

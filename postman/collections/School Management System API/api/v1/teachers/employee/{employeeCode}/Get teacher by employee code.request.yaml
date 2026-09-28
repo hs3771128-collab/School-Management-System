@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teachers/employee/:employeeCode"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  - key: employeeCode
+    value: EMP-001
+    description: Unique employee code
+settings: {}
+examples: ./.resources/Get teacher by employee code.resources/examples
+order: 1000

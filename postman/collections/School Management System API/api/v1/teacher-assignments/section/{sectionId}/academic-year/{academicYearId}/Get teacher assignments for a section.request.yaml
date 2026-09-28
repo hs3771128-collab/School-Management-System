@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teacher-assignments/section/:sectionId/academic-year/:academicYearId"
+method: GET
+headers:
+  Accept: "*/*"
+pathVariables:
+  sectionId: "3357"
+  academicYearId: "3357"
+settings: {}
+examples: ./.resources/Get teacher assignments for a section.resources/examples
+order: 1000

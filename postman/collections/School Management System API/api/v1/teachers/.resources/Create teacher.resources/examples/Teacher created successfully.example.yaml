@@ -1,0 +1,49 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/api/v1/teachers"
+  method: POST
+  headers:
+    Content-Type: application/json
+    Accept: "*/*"
+  body:
+    type: json
+    content: |-
+      {
+        "firstName": "string",
+        "lastName": "string",
+        "password": "stringstring",
+        "username": "HWTcUpq",
+        "dateOfBirth": "1947-04-06",
+        "gender": "FEMALE",
+        "email": "MXFWt0cS9oT@bNkSIqhFZkpXnmoqtfutryUhx.uk",
+        "phone": "str",
+        "address": "string",
+        "qualification": "string",
+        "joiningDate": "1953-11-16",
+        "status": "INACTIVE"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: "*/*"
+  body:
+    type: text
+    content: |-
+      {
+        "id": 7329,
+        "employeeCode": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "dateOfBirth": "1976-08-25",
+        "gender": "FEMALE",
+        "email": "string",
+        "phone": "string",
+        "address": "string",
+        "qualification": "string",
+        "joiningDate": "1962-10-02",
+        "status": "ACTIVE",
+        "createdAt": "1984-08-12T04:25:19.463Z",
+        "updatedAt": "1980-03-14T07:21:12.109Z"
+      }
+order: 1000

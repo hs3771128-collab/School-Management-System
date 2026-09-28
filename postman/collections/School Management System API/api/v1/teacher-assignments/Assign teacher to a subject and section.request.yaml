@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/api/v1/teacher-assignments"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: "*/*"
+body:
+  type: json
+  content: |-
+    {
+      "academicYearId": 9898,
+      "sectionId": 2243,
+      "subjectId": 8321,
+      "teacherId": 461
+    }
+settings: {}
+examples: ./.resources/Assign teacher to a subject and section.resources/examples
+order: 6000
